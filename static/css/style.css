@@ -148,18 +148,27 @@ div, h1, p:hover {
 	}
 	.text {
 		font-size: 30px;
-		margin-right: 20px;
+		margin-right: 50px;
 	}
 	.rectangle {
 		height: 20%;
 	}
 	.posts {
-		top:800px;
+		top:700px;
+	}
+	.navbar-brand {
+		font-size: 50px;
+	}
+
+	.collapse {
+		background-color: rgba(166,0,0,1);
+		animation-name: collapse;
+		animation-duration: 1s;
 	}
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 990px) {
 	.bottom {
 		left: 35%;
 	}
@@ -172,6 +181,12 @@ div, h1, p:hover {
 	.posts {
 		top:800px;
 	}
+
+	.collapse {
+		background-color: rgba(166,0,0,1);
+		animation-name: collapse;
+		animation-duration: 1s;
+	}
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
@@ -182,7 +197,7 @@ div, h1, p:hover {
 		font-size: 100px;
 	}
 	.rectangle {
-		height: 40%;
+		height: 20%;
 	}
 	.posts {
 		top:900px;
@@ -192,10 +207,4 @@ div, h1, p:hover {
 @keyframes collapse {
 	from {background-color: rgba(166,0,0,0);}
 	to {background-color: rgba(166,0,0,1);}
-}
-
-.collapse {
-	background-color: rgba(166,0,0,1);
-	animation-name: collapse;
-	animation-duration: 1s;
 }
