@@ -144,13 +144,15 @@ div, h1, p:hover {
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
 	.bottom {
-		left: 35%;
+		left: 30%;
 	}
 	.text {
 		font-size: 30px;
+		margin-right: 20px;
 	}
 	.rectangle {
 		height: 20%;
+		margin-left: 0;
 	}
 	.posts {
 		top:800px;
