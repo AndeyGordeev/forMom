@@ -1,26 +1,53 @@
+@font-face{
+	font-family: Brand;
+	src: url(../Brand.ttf);
+}
+@font-face{
+	font-family: BebasNeue;
+	src: url(../Circe-Regular.ttf);
+}
+@keyframes collapse {
+	from {background-color: rgba(166,0,0,0);}
+	to {background-color: rgba(166,0,0,1);}
+}
+@keyframes color {
+	0% {height: 10px; width: 1%;}
+	25% {height: 10px; width: 100%}
+	100% {}
+}
 @keyframes opacit {
 	0% {opacity: 0;}
 	50% {opacity: 0;}
 	80% {opacity: 0;}
 	100% {opacity: 1;}
 }
+@keyframes scrollUp {
+	0% {bottom: 0px;}
+	50% {bottom: 40px;}
+	100% {bottom: 0px;}
+}
 body {
 	font-family: BebasNeue, serif;
 	background: url(../back.png) center center fixed;
 	height: 1000px;
 }
-@font-face{
-	font-family: BebasNeue;
-	src: url(../Circe-Regular.ttf);
-}
 h1 {
 	font-family: BebasNeue, serif;
 	font-size: 600%;
 }
-@keyframes color {
-	0% {height: 10px; width: 1%;}
-	25% {height: 10px; width: 100%}
-	100% {}
+line {
+	stroke:rgb(0,0,0);
+	stroke-width:2;
+}
+
+div, h1, p:hover {
+	cursor: default;
+}
+svg {
+	position: relative;
+	bottom: 10px;
+	height: 30px;
+	width: 30px;
 }
 .rectangle {
 	position: absolute;
@@ -48,10 +75,6 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-@font-face{
-	font-family: Brand;
-	src: url(../Brand.ttf);
 }
 .navbar-brand {
 	font-family: Brand, serif;
@@ -98,24 +121,11 @@ h1 {
 	animation-duration: 3s;
 }
 
-@keyframes scrollUp {
-	0% {bottom: 0px;}
-	50% {bottom: 40px;}
-	100% {bottom: 0px;}
-}
-
 .down {
 	position: relative;
 	font-size: 20px;
 	bottom: 40px;
 	left: 47%;
-}
-
-svg {
-	position: relative;
-	bottom: 10px;
-	height: 30px;
-	width: 30px;
 }
 
 .bottom {
@@ -131,15 +141,6 @@ svg {
 	animation-name: bounce;
 	animation-duration: 0.5s;
 }	
-
-line {
-	stroke:rgb(0,0,0);
-	stroke-width:2;
-}
-
-div, h1, p:hover {
-	cursor: default;
-}
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
 	.bottom {
@@ -207,7 +208,7 @@ div, h1, p:hover {
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
 	.bottom {
-		left: 40%;
+		left: 30%;
 	}
 	.text {
 		font-size: 100px;
@@ -216,11 +217,6 @@ div, h1, p:hover {
 		height: 15%;
 	}
 	.posts {
-		top:1000px;
+		top:1200px;
 	}
-}
-
-@keyframes collapse {
-	from {background-color: rgba(166,0,0,0);}
-	to {background-color: rgba(166,0,0,1);}
 }
