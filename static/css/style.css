@@ -171,6 +171,9 @@ div, h1, p:hover {
 	.post {
 		border: 10px solid #A60000;
 	}
+	.hallo {
+		animation-name: none;
+	}
 }
 
 
