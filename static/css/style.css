@@ -29,7 +29,12 @@
 body {
 	font-family: BebasNeue, serif;
 	background: url(../back.png) center center fixed;
-	height: 1000px;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
 }
 h1 {
 	font-family: BebasNeue, serif;
@@ -45,9 +50,10 @@ div, h1, p:hover {
 }
 svg {
 	position: relative;
-	bottom: 10px;
 	height: 30px;
 	width: 30px;
+	bottom: 0;
+	left: -80px;
 }
 .rectangle {
 	position: absolute;
@@ -125,17 +131,19 @@ svg {
 .down {
 	position: relative;
 	font-size: 20px;
-	bottom: 40px;
-	left: 47%;
+	margin-bottom: 0;
+	bottom: 50px;
 }
 
 .bottom {
+	height: 150px;
+	width: 180px;
 	position: absolute;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
-	bottom: 0;
-	left: 38%;
+	bottom: 10px;
+	left: 45%;
 }
 
 .bottom:hover {
@@ -144,8 +152,8 @@ svg {
 }	
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
-	.bottom {
-		left: 10%;
+	.bottom{
+		left: 35%;
 	}
 	h1 {
 		font-size: 200%;
@@ -178,8 +186,8 @@ svg {
 
 
 @media screen and (min-width: 400px) and (max-width: 990px) {
-	.bottom {
-		left: 25%;
+	.bottom{
+		left: 40%;
 	}
 	.text {
 		font-size: 50px;
@@ -201,8 +209,8 @@ svg {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
-	.bottom {
-		left: 42%;
+	.bottom{
+		left: 50%;
 	}
 	.text {
 		font-size: 100px;
