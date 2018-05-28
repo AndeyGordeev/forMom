@@ -1,0 +1,28 @@
+{%extends 'layout.html'%}
+
+{%block title%}Главная{%endblock%}
+
+{%block main%}
+	<div class="container-fluid">
+			<div class="center">
+				<p class="text" style="top: 30%;">Для мамы,</h1>
+				<p class="text" style="top: 50%;">С любовью!</h1>
+			</div>
+			<div class="bottom">
+				<p class="down">Прокрути вниз</p>
+				<svg class="scroll">
+					<line x1="15" y1="30" x2="15" y2="0"/>
+					<line x1="15" y1="30" x2="25" y2="15"/>
+					<line x1="15" y1="30" x2="5" y2="15"/>
+				</svg>
+			</div>
+			<div class="row posts">
+				<div class="post"> I am in here </div>
+				<div class="post"> Hello, wordl! </div>
+				<div class="post"> Heyyyy </div>
+				<div class="post"> So good </div>
+				<div class="post"> Lucky </div>
+				<div class="post"> Hacky </div>
+			</div>
+		</div>
+{%endblock%}

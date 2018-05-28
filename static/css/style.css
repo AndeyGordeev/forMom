@@ -1,8 +1,3 @@
-@keyframes hallo {
-	0% {top:50%; visibility: visible;}
-	30%	{top:50%; visibility: visible;}
-	100% {top:-50%; visibility: visible;}
-}
 @keyframes opacit {
 	0% {opacity: 0;}
 	50% {opacity: 0;}
@@ -13,14 +8,6 @@ body {
 	font-family: BebasNeue, serif;
 	background: url(../back.png) center center fixed;
 	height: 150%;
-}
-.hallo {
-	visibility: hidden;
-	position: absolute;
-	left: 35%;
-	top: 50%;
-	animation-name: hallo; 
-	animation-timing-function: cubic-bezier(0.8, 0.5, 0, 0.6);
 }
 @font-face{
 	font-family: BebasNeue;
@@ -54,7 +41,7 @@ h1 {
 	font-size: 100px;
 	letter-spacing: 5px;
 	animation-name: zoomIn;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-timing-function: cubic-bezier(0.9, 0.5, 0, 0.6);
 }
 .center {
@@ -80,6 +67,10 @@ h1 {
 	top: 750px;
 	background-color: #FF4040;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.post:hover {
+	width: 90%;
 }
 
 .navbar{
@@ -125,13 +116,15 @@ svg {
 	bottom: 10px;
 	height: 30px;
 	width: 30px;
-	left: 49%;
 }
 
 .bottom {
 	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	bottom: 0;
-	left: 40%;
+	left: 38%;
 }
 
 .bottom:hover {
@@ -150,7 +143,7 @@ div, h1, p:hover {
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
 	.bottom {
-		left: 15%;
+		left: 13%;
 	}
 	h1 {
 		font-size: 200%;
@@ -159,6 +152,7 @@ div, h1, p:hover {
 		font-size: 30px;
 		text-align: center;
 		right: 15%;
+		animation-duration: 3s;
 	}
 	.rectangle {
 		height: 18%;
@@ -181,9 +175,6 @@ div, h1, p:hover {
 	.hallo {
 		animation-name: none;
 	}
-	.text {
-		animation-duration: 3s;
-	}
 }
 
 
@@ -194,6 +185,7 @@ div, h1, p:hover {
 	.text {
 		font-size: 50px;
 		right: 25%;
+		animation-duration: 3s;
 	}
 	.rectangle {
 		height: 23%;
@@ -209,9 +201,6 @@ div, h1, p:hover {
 	}
 	.hallo {
 		animation-name: none;
-	}
-	.text {
-		animation-duration: 3s;
 	}
 
 }
