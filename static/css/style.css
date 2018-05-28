@@ -83,11 +83,12 @@ svg {
 
 .posts {
 	padding-top: 100px;
-	position: relative;
+	position: absolute;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 750px;
+	top: 100%;
 	background-color: #FF4040;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -158,9 +159,6 @@ svg {
 	.rectangle {
 		height: 18%;
 	}
-	.posts {
-		top:700px;
-	}
 	.navbar-brand {
 		font-size: 50px;
 	}
@@ -191,10 +189,6 @@ svg {
 	.rectangle {
 		height: 23%;
 	}
-	.posts {
-		top:800px;
-	}
-
 	.collapse {
 		background-color: rgba(166,0,0,1);
 		animation-name: collapse;
@@ -215,8 +209,5 @@ svg {
 	}
 	.rectangle {
 		height: 15%;
-	}
-	.posts {
-		top:1200px;
 	}
 }
