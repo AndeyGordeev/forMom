@@ -1,10 +1,10 @@
 @font-face{
-	font-family: Brand;
-	src: url(../Brand.ttf);
-}
-@font-face{
 	font-family: BebasNeue;
 	src: url(../Circe-Regular.ttf);
+}
+@font-face{
+	font-family: Brand;
+	src: url(../Brand.ttf);
 }
 @keyframes collapse {
 	from {background-color: rgba(166,0,0,0);}
@@ -153,7 +153,7 @@ svg {
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
 	.bottom{
-		left: 35%;
+		left: 30%;
 	}
 	h1 {
 		font-size: 200%;
@@ -210,7 +210,7 @@ svg {
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
 	.bottom{
-		left: 50%;
+		left: 45%;
 	}
 	.text {
 		font-size: 100px;
