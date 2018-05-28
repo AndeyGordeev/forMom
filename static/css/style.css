@@ -82,9 +82,18 @@ svg {
 	align-items: center;
 	justify-content: center;
 }
+
+@keyframes nav {
+	0% {padding-left: 40%;}
+	50% {padding-left: 40%;}
+	100% {padding-left: 0%;}
+}
+
 .navbar-brand {
 	font-family: Brand, serif;
 	font-size: 80px;
+	animation-name: nav;
+	animation-duration: 3s;
 }
 
 .posts {
@@ -144,6 +153,7 @@ svg {
 	justify-content: center;
 	bottom: 10px;
 	left: 45%;
+	visibility: visible;
 }
 
 .bottom:hover {
