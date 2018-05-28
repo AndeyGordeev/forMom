@@ -7,7 +7,7 @@
 body {
 	font-family: BebasNeue, serif;
 	background: url(../back.png) center center fixed;
-	height: 150%;
+	height: 1000px;
 }
 @font-face{
 	font-family: BebasNeue;
@@ -130,7 +130,7 @@ svg {
 .bottom:hover {
 	animation-name: bounce;
 	animation-duration: 0.5s;
-}
+}	
 
 line {
 	stroke:rgb(0,0,0);
@@ -143,7 +143,7 @@ div, h1, p:hover {
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
 	.bottom {
-		left: 13%;
+		left: 10%;
 	}
 	h1 {
 		font-size: 200%;
