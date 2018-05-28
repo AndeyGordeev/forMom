@@ -168,6 +168,9 @@ div, h1, p:hover {
 		animation-name: collapse;
 		animation-duration: 1s;
 	}
+	.post {
+		border: 5px solid #A60000;
+	}
 }
 
 
@@ -200,7 +203,7 @@ div, h1, p:hover {
 		font-size: 100px;
 	}
 	.rectangle {
-		height: 20%;
+		height: 15%;
 	}
 	.posts {
 		top:1000px;
