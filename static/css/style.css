@@ -154,7 +154,7 @@ div, h1, p:hover {
 		right: 20%;
 	}
 	.rectangle {
-		height: 10%;
+		height: 15%;
 	}
 	.posts {
 		top:700px;
@@ -169,7 +169,7 @@ div, h1, p:hover {
 		animation-duration: 1s;
 	}
 	.post {
-		border: 5px solid #A60000;
+		border: 10px solid #A60000;
 	}
 }
 
