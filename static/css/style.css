@@ -28,17 +28,12 @@
 }
 body {
 	font-family: BebasNeue, serif;
-	background: url(../back.png) center center fixed;
 	width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     overflow: auto;
-}
-h1 {
-	font-family: BebasNeue, serif;
-	font-size: 600%;
 }
 line {
 	stroke:rgb(0,0,0);
@@ -53,7 +48,19 @@ svg {
 	height: 30px;
 	width: 30px;
 	bottom: 0;
-	left: -80px;
+}
+
+.back {
+	height: 1000px;
+	width: 100%;
+	background: url(../back.png) center 0 repeat fixed; min-height: 1000px;
+	position: absolute;
+}
+
+.navbar-toggler-icon{
+	animation-name: opacit;
+	animation-duration: 3s;
+	border: none;
 }
 .rectangle {
 	position: absolute;
@@ -141,18 +148,15 @@ svg {
 	position: relative;
 	font-size: 20px;
 	margin-bottom: 0;
-	bottom: 50px;
+	bottom: 20px;
 }
 
 .bottom {
-	height: 150px;
-	width: 180px;
 	position: absolute;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	bottom: 10px;
-	left: 45%;
+	display: block;
+	bottom: 0px;
+	right: 0;
+	left: 0;
 	visibility: visible;
 }
 
@@ -162,14 +166,8 @@ svg {
 }	
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
-	.bottom{
-		left: 30%;
-	}
-	h1 {
-		font-size: 200%;
-	}
 	.text {
-		font-size: 30px;
+		font-size: 40px;
 		text-align: center;
 		right: 15%;
 		animation-duration: 3s;
@@ -196,9 +194,6 @@ svg {
 
 
 @media screen and (min-width: 400px) and (max-width: 990px) {
-	.bottom{
-		left: 40%;
-	}
 	.text {
 		font-size: 50px;
 		right: 25%;
@@ -219,9 +214,6 @@ svg {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
-	.bottom{
-		left: 45%;
-	}
 	.text {
 		font-size: 100px;
 	}
