@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.post').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInLeftBig',
+        classToAdd: 'visible animated fadeInUp',
         offset: 100
        });
 });

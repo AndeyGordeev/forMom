@@ -50,21 +50,29 @@ svg {
 	bottom: 0;
 }
 
-.navbar-collapse .collapse .show{
+.textPost {
+	width: 47%;
+	margin: 10px 0 0 10px;
+	font-size: 20px;
+}
+
+.postImage {
+	position: relative;
+	height:299px;
+	width: 50%;
+	background-color: white;
+	float: right;
+	background: url(../example.jpg) no-repeat center 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .back {
-	height: 3800px;
+	height: 100%;
 	width: 100%;
 	background: url(../back.png) center 0 repeat fixed; min-height: 1000px;
 	position: absolute;
 }
 
-.navbar-toggler-icon{
-	animation-name: opacit;
-	animation-duration: 3s;
-	border: none;
-}
 .rectangle {
 	position: absolute;
 	bottom: -100;
@@ -107,19 +115,16 @@ svg {
 }
 
 .posts {
-	padding-top: 100px;
+	padding-top: 50px;
 	position: absolute;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	top: 100%;
+	height: auto;
 	background-color: #FF4040;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.post:hover {
-	width: 90%;
 }
 
 .navbar{
@@ -127,12 +132,15 @@ svg {
 }
 
 .post {
-	border: 20px solid #A60000;
+	border: 5px solid #A60000;
 	border-radius: 2px;
 	margin-bottom: 50px;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	min-height: 300px;
+	height: auto;
+	text-align: justify;
 	width: 70%;
+	background-color: #FF7373;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .hidden{
@@ -168,7 +176,7 @@ svg {
 	animation-duration: 0.5s;
 }	
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
 	.text {
 		font-size: 40px;
 		text-align: center;
@@ -188,15 +196,22 @@ svg {
 		animation-duration: 1s;
 	}
 	.post {
-		border: 10px solid #A60000;
+		border: 2px solid #A60000;
 	}
 	.hallo {
 		animation-name: none;
 	}
+	.navbar-brand {
+		animation-name: none;
+	}
+	.postImage {
+		height: 200px;
+		width: 100%;
+	}
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 990px) {
+@media screen and (min-width: 500px) and (max-width: 990px) {
 	.text {
 		font-size: 50px;
 		right: 25%;
@@ -213,7 +228,6 @@ svg {
 	.hallo {
 		animation-name: none;
 	}
-
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
