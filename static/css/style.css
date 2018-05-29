@@ -50,8 +50,11 @@ svg {
 	bottom: 0;
 }
 
+.navbar-collapse .collapse .show{
+}
+
 .back {
-	height: 1000px;
+	height: 3800px;
 	width: 100%;
 	background: url(../back.png) center 0 repeat fixed; min-height: 1000px;
 	position: absolute;
