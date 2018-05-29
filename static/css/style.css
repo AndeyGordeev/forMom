@@ -196,6 +196,7 @@ svg {
 		animation-duration: 1s;
 	}
 	.post {
+		width: 90%;
 		border: 2px solid #A60000;
 	}
 	.hallo {
