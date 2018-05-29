@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('div[data-type="backgroundPost"]').each(function(){
+    $('.postImage[data-type="backgroundPost"]').each(function(){
         if ($('body').width() > 990) 
         {
             var $bgobj = $(this); // создаем объект
@@ -14,7 +14,7 @@ $(document).ready(function(){
         };
     });
 
-    $('div[data-type="background"]').each(function(){
+    $('.back[data-type="background"]').each(function(){
         if ($('body').width() > 990) 
         {
             var $bgobj = $(this); // создаем объект

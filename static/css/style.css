@@ -176,7 +176,7 @@ svg {
 	animation-duration: 0.5s;
 }	
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+@media screen and (min-width: 0px) and (max-width: 990px) {
 	.text {
 		font-size: 40px;
 		text-align: center;
@@ -205,28 +205,11 @@ svg {
 		animation-name: none;
 	}
 	.postImage {
-		height: 200px;
+		height: 300px;
 		width: 100%;
 	}
-}
-
-
-@media screen and (min-width: 500px) and (max-width: 990px) {
-	.text {
-		font-size: 50px;
-		right: 25%;
-		animation-duration: 3s;
-	}
-	.rectangle {
-		height: 23%;
-	}
-	.collapse {
-		background-color: rgba(166,0,0,1);
-		animation-name: collapse;
-		animation-duration: 1s;
-	}
-	.hallo {
-		animation-name: none;
+	.textPost {
+		width: 90%;
 	}
 }
 
