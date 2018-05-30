@@ -21,6 +21,11 @@
 	80% {opacity: 0;}
 	100% {opacity: 1;}
 }
+@keyframes nav {
+	0% {padding-left: 40%;}
+	50% {padding-left: 40%;}
+	100% {padding-left: 0%;}
+}
 @keyframes scrollUp {
 	0% {bottom: 0px;}
 	50% {bottom: 40px;}
@@ -50,6 +55,52 @@ svg {
 	bottom: 0;
 }
 
+footer {
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+}
+
+.linkPost {
+	width: 180px;
+	font-size: 18px;
+	text-align: center;
+	font-style: italic;
+	color: white;
+	position: absolute;
+	left: 15%;
+	bottom: 30px;
+	border: 2px solid white;
+	border-radius: 30px;
+	padding: 5px 5px 5px 5px;
+}
+
+.linkPost:hover {
+	cursor: pointer;
+	border-color: #A60000;
+	color: black;
+}
+
+
+.linkPost:hover .linkP{
+	color: #A60000;
+}
+
+.linkP {
+	color: white;
+	text-decoration: none;
+}
+
+.linkP:link {
+	color: #A60000;
+	text-decoration: none;
+}
+
+.linkP:hover{
+	color: #A60000;
+	text-decoration: none;
+}
+
 .textPost {
 	width: 47%;
 	margin: 10px 0 0 10px;
@@ -58,7 +109,7 @@ svg {
 
 .postImage {
 	position: relative;
-	height:299px;
+	height:349px;
 	width: 50%;
 	background-color: white;
 	float: right;
@@ -69,7 +120,7 @@ svg {
 .back {
 	height: 100%;
 	width: 100%;
-	background: url(../back.png) center 0 repeat fixed; min-height: 1000px;
+	background: url(../back.jpg) center repeat fixed; min-height: 1000px;
 	position: absolute;
 }
 
@@ -99,12 +150,6 @@ svg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-@keyframes nav {
-	0% {padding-left: 40%;}
-	50% {padding-left: 40%;}
-	100% {padding-left: 0%;}
 }
 
 .navbar-brand {
@@ -198,6 +243,11 @@ svg {
 	.post {
 		width: 90%;
 		border: 2px solid #A60000;
+		padding-bottom: 50px;
+	}
+	.linkPost {
+		bottom: 10px;
+		left: 25%;
 	}
 	.hallo {
 		animation-name: none;
