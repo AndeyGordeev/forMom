@@ -107,7 +107,7 @@ img {
 	color: #A60000;
 }
 
-.linkP {
+.linkP:link {
 	color: white;
 	text-decoration: none;
 }
@@ -122,10 +122,11 @@ img {
 	text-decoration: none;
 }
 
-.linkP:active{
-	color: white;
+.linkP:visited:hover{
+	color: #A60000;
 	text-decoration: none;
 }
+
 
 .textPost {
 	width: 47%;
