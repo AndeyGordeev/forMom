@@ -17,6 +17,7 @@
 		<script src="../static/js/script.js"></script>
 		<script src="../static/js/parallax.js"></script>
 		<script src="../static/js/scrollTop.js"></script>
+		<script src="../static/js/scrollPosts.js"></script>
 	</head>
 	<body class="text-center">
 		<div class="back" data-type="background" data-speed="10"></div>
@@ -33,7 +34,7 @@
 			    <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Записи</a>
+			    <a class="nav-link" href="">Записи</a>
 			  </li>
 			</ul>
 			<ul class="navbar-nav ml-auto">
@@ -43,6 +44,24 @@
 			</ul>
 			</div>
 		</nav>
-		{%block main%}{%endblock%}
+
+		<div class="bottom">
+			<p class="down">Прокрути вниз</p>
+			<svg class="scroll">
+				<line x1="15" y1="30" x2="15" y2="0"/>
+				<line x1="15" y1="30" x2="25" y2="15"/>
+				<line x1="15" y1="30" x2="5" y2="15"/>
+			</svg>
+		</div>
+		<div class="container-fluid">
+				<div class="center">
+				{%block hat%}{%endblock%}
+				</div>
+				<div class="row posts">
+				{%block main%}{%endblock%}
+				</div>
+		</div>
+
+		
 	</body>
 </html>
