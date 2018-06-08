@@ -67,7 +67,7 @@ img {
   max-width: 100%;
 }
 
-.img-responsive{
+.img-responsive.head{
 	top:20%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	position: absolute;
