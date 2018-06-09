@@ -6,22 +6,22 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
-@app.route('/post1')
+@app.route('/start')
 def post1():
 	return render_template('post1.html')
 
-@app.route('/post2')
+@app.route('/childhood')
 def post2():
 	return render_template('post2.html')
 
-@app.route('/post3')
+@app.route('/school')
 def post3():
 	return render_template('post3.html')
 
-@app.route('/post4')
+@app.route('/university')
 def post4():
 	return render_template('post4.html')
 
-@app.route('/post5')
+@app.route('/wishes')
 def post5():
 	return render_template('post5.html')

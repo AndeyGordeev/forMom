@@ -140,7 +140,6 @@ img {
 	width: 50%;
 	background-color: white;
 	float: right;
-	background: url(../example.jpg) no-repeat center 0;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
