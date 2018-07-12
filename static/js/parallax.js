@@ -22,7 +22,7 @@ $(document).ready(function(){
             $window.scroll(function() {
                 var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
                 // Присваиваем значение background-position
-                var coords = 'center '+ yPos * 3 + 'px';
+                var coords = 'center '+ yPos * 1 + 'px';
                 // Создаем эффект Parallax Scrolling
                 $bgobj.css({ backgroundPosition: coords });
             });
